@@ -19,11 +19,11 @@ public class Main {
         int n = 7;
  
         // costruisci il graph
-        Grafo graph = new Grafo(bordi, n);
+        Grafo g = new Grafo(bordi, n);
  
         // esegue l'algoritmo di Dijkstra da ogni nodo
         for (int origine = 0; origine < n; origine++) {
-            Dijkstra.findShortestPaths(graph, origine, n);
+            Dijkstra.findShortestPaths(g, origine, n);
         }
     }
 }
